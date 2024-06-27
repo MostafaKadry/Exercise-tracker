@@ -16,10 +16,10 @@ const App = () => {
       <br />
       <Routes>
         <Route path='/Exercise-tracker' exact Component={ExerciseList} />
-        <Route path='/edit/:id' Component={EditExercise} />
-        <Route path='/create/' Component={CreateExercise} />
-        <Route path='/user' Component={CreateUser} />
-        <Route path="*" element="Not Found" />
+        <Route path='/exercise-tracker/edit/:id' Component={EditExercise} />
+        <Route path='/exercise-tracker/create/' Component={CreateExercise} />
+        <Route path='/exercise-tracker/user' Component={CreateUser} />
+        <Route path="*" element="404 ... Page Not Found" />
       </Routes>
     </Router>
   );

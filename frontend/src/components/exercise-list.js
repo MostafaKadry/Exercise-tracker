@@ -17,7 +17,7 @@ const ExerciseList = () => {
     }
     const editExercise = (exe) => {
         localStorage.setItem("exercise-details", JSON.stringify(exe))
-        window.location = `/edit/${exe._id}`;
+        window.location = `/exercise-tracker/edit/${exe._id}`;
     }
     useEffect(() => {
         axios.get("https://exercise-tracker-blond.vercel.app/exercises")

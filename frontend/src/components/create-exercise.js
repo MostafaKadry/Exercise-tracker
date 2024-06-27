@@ -22,7 +22,7 @@ const CreateExercise = () => {
                 document.getElementById("toast").classList.add("show");
                 console.log(res);
                 setTimeout(() => {
-                    window.location = '/';
+                    window.location = '/exercise-tracker';
                 }, 2000);
             })
             .catch(err => console.log(err));
